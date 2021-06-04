@@ -30,6 +30,7 @@ public enum ActionTypeEnum {
     /** Action type by action code*/
     private final static Map<String, ActionTypeEnum> actionTypeEnumByCode;
 
+    /** Instantiate the bound action. */
     public Action instantiateAction() {
         try {
             return actionClass.getDeclaredConstructor().newInstance();

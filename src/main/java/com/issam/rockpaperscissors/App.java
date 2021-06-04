@@ -1,5 +1,6 @@
 package com.issam.rockpaperscissors;
 
+/** Main class. */
 public class App {
 
     public static void printInstructionsMessage() {
@@ -8,7 +9,6 @@ public class App {
                 "            2. \"P\" for PAPER           \n" +
                 "            3. \"S\" for SCISSOR         \n");
     }
-
 
     public static void main(String[] args) {
         printInstructionsMessage();

@@ -2,6 +2,7 @@ package com.issam.rockpaperscissors.model;
 
 import com.issam.rockpaperscissors.ActionTypeEnum;
 
+/** Scissors wins against Paper and lose against Rock. */
 public class Scissors implements Action {
 
     @Override

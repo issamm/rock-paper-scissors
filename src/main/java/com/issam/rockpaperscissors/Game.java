@@ -9,7 +9,7 @@ public class Game {
      * Play between two players.
      * @param userAction User action
      * @param computerAction Computer action
-     * @return Result output describing the winner
+     * @return Result string output describing the winner
      */
     public String play(ActionTypeEnum userAction, ActionTypeEnum computerAction) {
         int userScore = userAction.instantiateAction().scoreAgainst(computerAction);
@@ -19,7 +19,7 @@ public class Game {
         if (userScore < 0) {
             return String.format("User [%s] vs Computer [%s] : Computer won !", userAction.name(), computerAction.name());
         }
-        // Here, userScore = 0
+        // Here, userScore = 0, it's a draw
         return String.format("User [%s] vs Computer [%s] : it's a draw !", userAction.name(), computerAction.name());
     }
 
